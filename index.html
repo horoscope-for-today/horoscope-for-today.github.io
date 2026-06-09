@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read your free daily horoscope for today. Get astrology forecasts for all 12 zodiac signs — Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces. Love, career, and energy guidance.">
+  <meta name="keywords" content="horoscope for today, daily horoscope, zodiac signs, astrology today, free horoscope, daily astrology forecast, horoscope today, fire signs zodiac, water signs zodiac, air signs zodiac, earth signs zodiac">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="Daily Horoscope for Today by Zodiac Sign | Free Astrology Forecast">
+  <meta property="og:description" content="Read your free daily horoscope for today. Get astrology forecasts for all 12 zodiac signs — Aries through Pisces. Love, career, and energy guidance.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://horoscope-for-today.github.io/">
+  <link rel="canonical" href="https://horoscope-for-today.github.io/">
+  <title>Daily Horoscope for Today by Zodiac Sign | Free Astrology Forecast</title>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Horoscope for Today",
+    "url": "https://horoscope-for-today.github.io/",
+    "description": "Free daily horoscope for all 12 zodiac signs. Get today's astrology forecast for love, career, and personal growth.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Horoscope for Today",
+      "url": "https://horoscope-for-today.github.io/"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://horoscope-for-today.github.io/#{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Daily Horoscope for All 12 Zodiac Signs",
+    "description": "Read your free daily horoscope for Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, and Pisces.",
+    "url": "https://horoscope-for-today.github.io/",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Horoscope for Today",
+      "url": "https://horoscope-for-today.github.io/"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Astrology and Horoscopes"
+    },
+    "relatedLink": [
+      "https://www.aifate.net/en/birth-chart",
+      "https://www.aifate.net/en/synastry-chart",
+      "https://www.aifate.net/en/transit-chart"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is today's horoscope?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Today's horoscope is a daily astrological forecast based on the current planetary positions and their influence on each zodiac sign. It covers themes like love, career, energy, and personal growth. Read your free daily horoscope above for all 12 signs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the 12 zodiac signs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 12 zodiac signs are: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, and Pisces. Each sign belongs to one of four elements: Fire (Aries, Leo, Sagittarius), Earth (Taurus, Virgo, Capricorn), Air (Gemini, Libra, Aquarius), or Water (Cancer, Scorpio, Pisces)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the fire signs of the zodiac?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The fire signs are Aries, Leo, and Sagittarius. Fire signs are known for their passion, energy, creativity, and dynamic personalities. They are natural leaders who inspire others with their enthusiasm and courage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the water signs of the zodiac?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The water signs are Cancer, Scorpio, and Pisces. Water signs are known for their emotional depth, intuition, empathy, and strong connection to feelings. They are highly sensitive and often possess psychic or empathic abilities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I read my Sun sign or Rising sign horoscope?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For daily horoscopes, your Sun sign is the most common reference. However, your Rising sign (Ascendant) may feel more accurate for day-to-day events. For a complete picture, read both your Sun and Rising sign forecasts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the most intelligent zodiac sign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Intelligence manifests differently across signs. Aquarius is often associated with innovative thinking and vision, Virgo with analytical and methodical abilities, and Gemini with quick wit and communication skills. Each sign has unique intellectual strengths."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="star-layer" aria-hidden="true"></div>
+
+<!-- SKIP LINK -->
+<a href="#main-content" class="sr-only">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="site-logo" aria-label="Horoscope for Today Home">
+        <svg class="logo-icon" aria-hidden="true" width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+          <circle cx="16" cy="16" r="9" stroke="#c4a8ff" stroke-width="1.2"/>
+          <circle cx="16" cy="16" r="4" fill="#c4a8ff" opacity="0.7"/>
+          <circle cx="16" cy="4" r="1.5" fill="#f0c96b"/>
+          <circle cx="16" cy="28" r="1.5" fill="#f0c96b"/>
+          <circle cx="4" cy="16" r="1.5" fill="#f0c96b"/>
+          <circle cx="28" cy="16" r="1.5" fill="#f0c96b"/>
+          <circle cx="7.5" cy="7.5" r="1" fill="rgba(196,168,255,0.6)"/>
+          <circle cx="24.5" cy="7.5" r="1" fill="rgba(196,168,255,0.6)"/>
+          <circle cx="7.5" cy="24.5" r="1" fill="rgba(196,168,255,0.6)"/>
+          <circle cx="24.5" cy="24.5" r="1" fill="rgba(196,168,255,0.6)"/>
+        </svg>
+        Horoscope For Today
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#daily-signs">Daily Signs</a>
+        <a href="#elements">Elements</a>
+        <a href="#planets">Planets</a>
+        <a href="#faq">FAQ</a>
+        <a href="#birth-chart">Birth Chart</a>
+      </nav>
+      <a href="https://www.aifate.net/en/birth-chart" target="_blank" rel="noopener" class="nav-cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Free Birth Chart
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container container--narrow">
+      <div class="hero-eyebrow">
+        <span>✦</span>
+        <span id="today-label">Today's Cosmic Weather</span>
+      </div>
+      <h1 id="hero-heading" class="hero-title">
+        Your <em>Horoscope</em><br>for Today
+      </h1>
+      <p class="hero-subtitle">
+        Daily astrology readings for all 12 zodiac signs — love, career, energy, and the planetary forces shaping your day right now.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#daily-signs" class="btn-primary">
+          Read My Sign
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+        <a href="https://www.aifate.net/en/birth-chart" target="_blank" rel="noopener" class="btn-secondary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          Get My Birth Chart
+        </a>
+      </div>
+      <div class="date-display">
+        <div class="date-pill">
+          <span class="dot" aria-hidden="true"></span>
+          <span id="current-date">Loading today's date…</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAILY SIGNS -->
+  <section class="section" id="daily-signs" aria-labelledby="signs-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Daily Horoscope</span>
+        <h2 id="signs-heading" class="section-title">All 12 Zodiac Signs</h2>
+        <p class="section-desc">Select your sign to read today's full forecast — energy, love, work, and what the stars advise.</p>
+      </div>
+
+      <div class="zodiac-grid" role="list">
+
+        <!-- ARIES -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Aries horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♈</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Aries</div>
+              <div class="sign-dates">Mar 21 – Apr 19</div>
+            </div>
+          </div>
+          <span class="sign-element el-fire">🔥 Fire · Cardinal</span>
+          <p class="sign-preview">Mars surges forward today, giving you a burst of confidence and drive. This is a powerful day to initiate — reach out first, pitch that idea, or start the project you've been circling. Your energy is magnetic, and others will follow your lead.</p>
+          <div class="mood-bar" aria-label="Energy level: high" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>4/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Passionate energy surrounds romance. Single Aries may attract someone new through bold actions. Coupled Rams should plan something spontaneous.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">An ideal day for presentations, pitches, and leadership roles. Your initiative will be noticed by authority figures. Avoid impulsive financial decisions.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">High physical energy — channel it into exercise or outdoor activities. Watch for tension headaches from overexertion.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>9</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Red</strong></span>
+              <span class="lucky-item">Best Time: <strong>Morning</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/aries" target="_blank" rel="noopener" class="read-more">Full Aries Reading →</a>
+        </article>
+
+        <!-- TAURUS -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Taurus horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♉</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Taurus</div>
+              <div class="sign-dates">Apr 20 – May 20</div>
+            </div>
+          </div>
+          <span class="sign-element el-earth">🌿 Earth · Fixed</span>
+          <p class="sign-preview">Venus highlights your financial intuition today. Avoid impulsive purchases, but trust your instinct on long-term investments. Evening brings a comforting domestic energy that helps you recharge.</p>
+          <div class="mood-bar" aria-label="Energy level: moderate" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip"></div><div class="mood-pip"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>3/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Stability is your love language today. Partners appreciate your grounded presence. A meaningful conversation over a shared meal deepens bonds.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">Financial matters favor careful analysis over quick action. Review budgets, contracts, or investment plans. Steady progress beats rushed results.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">Indulge in sensory comforts — a warm bath, good food, or nature walk. Your body craves gentle rhythms today.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>6</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Green</strong></span>
+              <span class="lucky-item">Best Time: <strong>Evening</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/taurus" target="_blank" rel="noopener" class="read-more">Full Taurus Reading →</a>
+        </article>
+
+        <!-- GEMINI -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Gemini horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♊</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Gemini</div>
+              <div class="sign-dates">May 21 – Jun 20</div>
+            </div>
+          </div>
+          <span class="sign-element el-air">💨 Air · Mutable</span>
+          <p class="sign-preview">Mercury sharpens your communication today. Words come easily — it's an ideal time for negotiations, creative writing, or a heart-to-heart conversation you've been postponing. Your social charm is at its peak.</p>
+          <div class="mood-bar" aria-label="Energy level: very high" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>5/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Flirtatious energy is high. Witty banter leads to deeper connections. Express what's been on your mind — honesty wins hearts today.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">Excellent for networking, interviews, and collaborative projects. Your ideas resonate with others. Document important conversations for reference.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">Mental energy is high but may cause restlessness. Journal your thoughts or engage in stimulating conversations to stay balanced.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>5</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Yellow</strong></span>
+              <span class="lucky-item">Best Time: <strong>Afternoon</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/gemini" target="_blank" rel="noopener" class="read-more">Full Gemini Reading →</a>
+        </article>
+
+        <!-- CANCER -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Cancer horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♋</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Cancer</div>
+              <div class="sign-dates">Jun 21 – Jul 22</div>
+            </div>
+          </div>
+          <span class="sign-element el-water">💧 Water · Cardinal</span>
+          <p class="sign-preview">The Moon's position today amplifies your intuition. You may sense what others aren't saying — trust those feelings. A family connection holds something meaningful if you look closely. Home is your power base today.</p>
+          <div class="mood-bar" aria-label="Energy level: moderate" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip"></div><div class="mood-pip"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>3/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Emotional depth strengthens bonds. Share your vulnerabilities with someone you trust. A nostalgic gesture — a song, photo, or memory — sparks tenderness.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">Your empathy makes you a natural mediator in workplace tensions. Trust your gut on people-related decisions. Creative projects flourish in quiet spaces.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">Emotional sensitivity is heightened — protect your energy. Spending time near water or in your home sanctuary restores balance.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>2</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Silver</strong></span>
+              <span class="lucky-item">Best Time: <strong>Night</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/cancer" target="_blank" rel="noopener" class="read-more">Full Cancer Reading →</a>
+        </article>
+
+        <!-- LEO -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Leo horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♌</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Leo</div>
+              <div class="sign-dates">Jul 23 – Aug 22</div>
+            </div>
+          </div>
+          <span class="sign-element el-fire">🔥 Fire · Fixed</span>
+          <p class="sign-preview">The Sun lights up your creative sector. Visibility comes naturally today — share your ideas, lead the conversation, and let your warmth draw the right people closer to your vision.</p>
+          <div class="mood-bar" aria-label="Energy level: high" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>4/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Your natural magnetism is amplified. Romantic gestures are well-received. Plan something creative — a date night or heartfelt message makes a lasting impression.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">Creative projects and presentations shine. Your confidence inspires teams. Take the lead on group initiatives — your vision is clearer than you think.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">Heart-centered activities bring joy. Dance, play, or spend time with children. Avoid overexerting yourself to maintain appearances.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>1</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Gold</strong></span>
+              <span class="lucky-item">Best Time: <strong>Midday</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/leo" target="_blank" rel="noopener" class="read-more">Full Leo Reading →</a>
+        </article>
+
+        <!-- VIRGO -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Virgo horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♍</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Virgo</div>
+              <div class="sign-dates">Aug 23 – Sep 22</div>
+            </div>
+          </div>
+          <span class="sign-element el-earth">🌿 Earth · Mutable</span>
+          <p class="sign-preview">Mercury supports detailed, methodical work today. Tackle the task you've been over-planning and make progress. Health-related decisions made now will have lasting positive effects.</p>
+          <div class="mood-bar" aria-label="Energy level: moderate-high" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>4/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Acts of service speak louder than words. Show love through practical help — organizing, cooking, or solving a problem together strengthens bonds.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">Your analytical skills are sharp. Perfect for audits, planning, and process improvement. Colleagues seek your advice on complex problems.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">Focus on gut health and routine. A new diet or exercise plan started today is more likely to stick. Avoid overthinking minor symptoms.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>5</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Navy</strong></span>
+              <span class="lucky-item">Best Time: <strong>Morning</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/virgo" target="_blank" rel="noopener" class="read-more">Full Virgo Reading →</a>
+        </article>
+
+        <!-- LIBRA -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Libra horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♎</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Libra</div>
+              <div class="sign-dates">Sep 23 – Oct 22</div>
+            </div>
+          </div>
+          <span class="sign-element el-air">💨 Air · Cardinal</span>
+          <p class="sign-preview">Venus encourages harmonious connections today. If a relationship has felt out of balance, today opens a window for gentle reset. Aesthetic choices made now will surprise you with their rightness.</p>
+          <div class="mood-bar" aria-label="Energy level: moderate" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip"></div><div class="mood-pip"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>3/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Partnership energy is strong. Compromise comes naturally. If single, a balanced, aesthetically-minded person may enter your orbit. Beauty attracts beauty.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">Diplomacy wins negotiations. Your sense of fairness earns respect in team settings. Design, art, and client-facing work are favored.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">Balance is your keyword — avoid extremes in diet or activity. Aromatherapy, music, or gentle yoga restores equilibrium.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>6</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Pink</strong></span>
+              <span class="lucky-item">Best Time: <strong>Sunset</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/libra" target="_blank" rel="noopener" class="read-more">Full Libra Reading →</a>
+        </article>
+
+        <!-- SCORPIO -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Scorpio horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♏</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Scorpio</div>
+              <div class="sign-dates">Oct 23 – Nov 21</div>
+            </div>
+          </div>
+          <span class="sign-element el-water">💧 Water · Fixed</span>
+          <p class="sign-preview">Pluto deepens your perception today. Beneath surface conversations, something important is emerging — stay patient and observant. A financial opportunity may require quick evaluation.</p>
+          <div class="mood-bar" aria-label="Energy level: low-moderate" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip"></div><div class="mood-pip"></div><div class="mood-pip"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>2/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Intensity defines your romantic energy. Deep, transformative conversations bring you closer. Secrets revealed today strengthen rather than damage trust.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">Research and investigation yield results. Hidden information comes to light. Financial planning and strategic moves are favored over action.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">Emotional detox is needed. Journaling or therapy sessions are productive. Avoid bottling up feelings — release creates space for renewal.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>8</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Black</strong></span>
+              <span class="lucky-item">Best Time: <strong>Late Night</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/scorpio" target="_blank" rel="noopener" class="read-more">Full Scorpio Reading →</a>
+        </article>
+
+        <!-- SAGITTARIUS -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Sagittarius horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♐</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Sagittarius</div>
+              <div class="sign-dates">Nov 22 – Dec 21</div>
+            </div>
+          </div>
+          <span class="sign-element el-fire">🔥 Fire · Mutable</span>
+          <p class="sign-preview">Jupiter expands your horizons today. A chance encounter or piece of information could redirect your thinking entirely. Stay open-minded — the biggest growth often arrives disguised.</p>
+          <div class="mood-bar" aria-label="Energy level: high" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>4/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Adventure spices up romance. Plan something unexpected — a trip, new cuisine, or philosophical debate. Shared experiences create lasting bonds.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">International connections or cross-cultural projects expand your reach. Teaching, publishing, and travel-related work are especially favored today.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">Outdoor activities and exploration feed your spirit. Physical movement in nature — hiking, cycling, or running — channels your abundant energy.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>3</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Purple</strong></span>
+              <span class="lucky-item">Best Time: <strong>Afternoon</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/sagittarius" target="_blank" rel="noopener" class="read-more">Full Sagittarius Reading →</a>
+        </article>
+
+        <!-- CAPRICORN -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Capricorn horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♑</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Capricorn</div>
+              <div class="sign-dates">Dec 22 – Jan 19</div>
+            </div>
+          </div>
+          <span class="sign-element el-earth">🌿 Earth · Cardinal</span>
+          <p class="sign-preview">Saturn rewards patient effort today. A project you've invested time in is quietly gaining traction. Resist the urge to rush — the structural foundation you've laid is exactly what will make it last.</p>
+          <div class="mood-bar" aria-label="Energy level: moderate" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip"></div><div class="mood-pip"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>3/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Commitment-minded energy prevails. Serious conversations about the future feel natural. Quality time and shared goals strengthen partnerships.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">Long-term planning pays off. Recognition for past efforts may arrive. Leadership roles and authority positions are within reach — step up confidently.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">Bones and joints need attention. Stretching, calcium-rich foods, and proper posture support your physical structure today.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>4</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Charcoal</strong></span>
+              <span class="lucky-item">Best Time: <strong>Dawn</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/capricorn" target="_blank" rel="noopener" class="read-more">Full Capricorn Reading →</a>
+        </article>
+
+        <!-- AQUARIUS -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Aquarius horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♒</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Aquarius</div>
+              <div class="sign-dates">Jan 20 – Feb 18</div>
+            </div>
+          </div>
+          <span class="sign-element el-air">💨 Air · Fixed</span>
+          <p class="sign-preview">Uranus sparks unconventional inspiration today. The solution you've been looking for probably doesn't follow the expected path. Collaborate with someone who thinks differently than you do.</p>
+          <div class="mood-bar" aria-label="Energy level: high" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>4/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Friendship-based romance flourishes. Intellectual connection matters more than grand gestures. Group activities may spark unexpected attraction.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">Innovation trumps tradition. Tech projects, humanitarian causes, and team collaborations are favored. Your unique perspective solves old problems.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">Circulation and nervous system need care. Cold exposure, breathwork, or unconventional wellness practices benefit you today.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>7</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Electric Blue</strong></span>
+              <span class="lucky-item">Best Time: <strong>Late Evening</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/aquarius" target="_blank" rel="noopener" class="read-more">Full Aquarius Reading →</a>
+        </article>
+
+        <!-- PISCES -->
+        <article class="zodiac-card" role="listitem" tabindex="0" aria-label="Pisces horoscope for today">
+          <div class="zodiac-card-header">
+            <div class="zodiac-glyph" aria-hidden="true">♓</div>
+            <div class="zodiac-info">
+              <div class="sign-name">Pisces</div>
+              <div class="sign-dates">Feb 19 – Mar 20</div>
+            </div>
+          </div>
+          <span class="sign-element el-water">💧 Water · Mutable</span>
+          <p class="sign-preview">Neptune heightens your empathy and artistic sensitivity today. Creative output flows naturally — especially in writing or music. Set gentle boundaries so your energy isn't absorbed by others' dramas.</p>
+          <div class="mood-bar" aria-label="Energy level: moderate-low" role="img">
+            <div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip active"></div><div class="mood-pip"></div><div class="mood-pip"></div>
+          </div>
+          <div class="mood-labels"><span>Energy</span><span>3/5</span></div>
+          <details class="sign-details">
+            <summary>Today's Details</summary>
+            <div class="detail-grid">
+              <div class="detail-item">
+                <span class="detail-label">Love</span>
+                <span class="detail-text">Romantic idealism is high. Poetry, music, or art shared with a partner creates magic. Trust your intuition about someone's true feelings.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Career</span>
+                <span class="detail-text">Creative and healing professions thrive. Trust your instincts in artistic projects. Avoid administrative tasks that drain your imaginative energy.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Wellness</span>
+                <span class="detail-text">Protect your energy field. Salt baths, meditation, and time near water recharge you. Limit exposure to negative media or draining people.</span>
+              </div>
+            </div>
+            <div class="lucky-strip">
+              <span class="lucky-item">Lucky Number: <strong>7</strong></span>
+              <span class="lucky-item">Lucky Color: <strong>Sea Green</strong></span>
+              <span class="lucky-item">Best Time: <strong>Twilight</strong></span>
+            </div>
+          </details>
+          <a href="https://www.aifate.net/en/zodiac/pisces" target="_blank" rel="noopener" class="read-more">Full Pisces Reading →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANETS TODAY -->
+  <section class="section" id="planets" aria-labelledby="planets-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Planetary Positions</span>
+        <h2 id="planets-heading" class="section-title">Planets Shaping Today</h2>
+        <p class="section-desc">Each planet influences specific areas of life. See what energies are most active right now.</p>
+      </div>
+      <div class="planets-row">
+        <div class="planet-card"><span class="planet-symbol">☉</span><div class="planet-name">Sun</div><div class="planet-theme">Identity · Vitality</div><div class="planet-sign">in Gemini</div></div>
+        <div class="planet-card"><span class="planet-symbol">☽</span><div class="planet-name">Moon</div><div class="planet-theme">Emotions · Instinct</div><div class="planet-sign">in Virgo</div></div>
+        <div class="planet-card"><span class="planet-symbol">☿</span><div class="planet-name">Mercury</div><div class="planet-theme">Mind · Communication</div><div class="planet-sign">in Gemini</div></div>
+        <div class="planet-card"><span class="planet-symbol">♀</span><div class="planet-name">Venus</div><div class="planet-theme">Love · Beauty</div><div class="planet-sign">in Taurus</div></div>
+        <div class="planet-card"><span class="planet-symbol">♂</span><div class="planet-name">Mars</div><div class="planet-theme">Action · Drive</div><div class="planet-sign">in Aries</div></div>
+        <div class="planet-card"><span class="planet-symbol">♃</span><div class="planet-name">Jupiter</div><div class="planet-theme">Expansion · Luck</div><div class="planet-sign">in Cancer</div></div>
+        <div class="planet-card"><span class="planet-symbol">♄</span><div class="planet-name">Saturn</div><div class="planet-theme">Structure · Discipline</div><div class="planet-sign">in Pisces</div></div>
+        <div class="planet-card"><span class="planet-symbol">♅</span><div class="planet-name">Uranus</div><div class="planet-theme">Change · Awakening</div><div class="planet-sign">in Taurus</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIRTH CHART DEEP READING — AIFATE -->
+  <section class="section" id="birth-chart" aria-labelledby="birthchart-heading">
+    <div class="container">
+      <div class="deep-reading">
+        <div class="deep-reading-content">
+          <p class="deep-reading-eyebrow">✦ Go Deeper Than a Daily Horoscope</p>
+          <h2 id="birthchart-heading">Your Personal Birth Chart Reveals What Daily Forecasts Miss</h2>
+          <p>A daily horoscope is a starting point. Your natal chart — calculated from your exact birth date, time, and place — maps your Sun, Moon, Rising sign, all planetary houses and aspects, giving you an astrology reading that is uniquely yours.</p>
+          <div class="deep-reading-features">
+            <div class="feature-row">
+              <div class="feature-icon">🌙</div>
+              <div class="feature-text">
+                <strong>Natal Chart Calculator</strong>
+                <span>Planets, houses, and aspects mapped to your birth moment — free and instant.</span>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon">💞</div>
+              <div class="feature-text">
+                <strong>Synastry &amp; Love Compatibility</strong>
+                <span>Compare two birth charts to understand attraction, communication, and relationship patterns.</span>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon">🔭</div>
+              <div class="feature-text">
+                <strong>Transit Chart</strong>
+                <span>See how current planetary movements interact with your natal chart for timing and planning.</span>
+              </div>
+            </div>
+          </div>
+          <a href="https://www.aifate.net/en/birth-chart" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex; width:fit-content;">
+            Create My Free Birth Chart
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="deep-reading-visual" aria-hidden="true">
+          <div class="chart-wheel">
+            <svg viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Outer circle -->
+              <circle cx="130" cy="130" r="124" stroke="rgba(196,168,255,0.2)" stroke-width="1"/>
+              <!-- Zodiac ring -->
+              <circle cx="130" cy="130" r="110" stroke="rgba(196,168,255,0.12)" stroke-width="18" fill="none"/>
+              <!-- House lines -->
+              <circle cx="130" cy="130" r="100" stroke="rgba(196,168,255,0.08)" stroke-width="0.5"/>
+              <circle cx="130" cy="130" r="75" stroke="rgba(196,168,255,0.1)" stroke-width="0.5"/>
+              <circle cx="130" cy="130" r="50" stroke="rgba(196,168,255,0.08)" stroke-width="0.5"/>
+              <!-- 12 house spokes -->
+              <line x1="130" y1="6" x2="130" y2="254" stroke="rgba(196,168,255,0.08)" stroke-width="0.5"/>
+              <line x1="6" y1="130" x2="254" y2="130" stroke="rgba(196,168,255,0.08)" stroke-width="0.5"/>
+              <line x1="38" y1="38" x2="222" y2="222" stroke="rgba(196,168,255,0.08)" stroke-width="0.5"/>
+              <line x1="222" y1="38" x2="38" y2="222" stroke="rgba(196,168,255,0.08)" stroke-width="0.5"/>
+              <line x1="6" y1="87" x2="254" y2="173" stroke="rgba(196,168,255,0.06)" stroke-width="0.5"/>
+              <line x1="87" y1="6" x2="173" y2="254" stroke="rgba(196,168,255,0.06)" stroke-width="0.5"/>
+              <line x1="254" y1="87" x2="6" y2="173" stroke="rgba(196,168,255,0.06)" stroke-width="0.5"/>
+              <line x1="173" y1="6" x2="87" y2="254" stroke="rgba(196,168,255,0.06)" stroke-width="0.5"/>
+              <!-- Aspect lines -->
+              <line x1="130" y1="30" x2="225" y2="185" stroke="rgba(196,168,255,0.18)" stroke-width="0.7"/>
+              <line x1="130" y1="30" x2="35" y2="185" stroke="rgba(240,201,107,0.18)" stroke-width="0.7"/>
+              <line x1="225" y1="185" x2="35" y2="185" stroke="rgba(126,207,205,0.15)" stroke-width="0.7"/>
+              <!-- Planet dots -->
+              <circle cx="130" cy="30" r="5" fill="#f0c96b"/>
+              <circle cx="225" cy="185" r="4" fill="#c4a8ff"/>
+              <circle cx="35" cy="185" r="4" fill="#7ecfcd"/>
+              <circle cx="200" cy="60" r="3.5" fill="#f4829a"/>
+              <circle cx="50" cy="80" r="3" fill="#c4a8ff" opacity="0.7"/>
+              <circle cx="175" cy="215" r="3" fill="#f0c96b" opacity="0.7"/>
+              <!-- Center -->
+              <circle cx="130" cy="130" r="12" fill="rgba(196,168,255,0.06)" stroke="rgba(196,168,255,0.2)" stroke-width="1"/>
+              <circle cx="130" cy="130" r="3" fill="rgba(240,201,107,0.8)"/>
+              <!-- Zodiac glyphs on ring -->
+              <text x="125" y="18" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♈</text>
+              <text x="158" y="26" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♉</text>
+              <text x="235" y="85" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♊</text>
+              <text x="238" y="135" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♋</text>
+              <text x="228" y="185" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♌</text>
+              <text x="165" y="244" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♍</text>
+              <text x="120" y="248" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♎</text>
+              <text x="75" y="244" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♏</text>
+              <text x="22" y="190" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♐</text>
+              <text x="14" y="140" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♑</text>
+              <text x="20" y="80" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♒</text>
+              <text x="65" y="26" fill="rgba(196,168,255,0.5)" font-size="10" font-family="serif">♓</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZODIAC ELEMENTS -->
+  <section class="section" id="elements" aria-labelledby="elements-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Browse by Element</span>
+        <h2 id="elements-heading" class="section-title">Zodiac Elements</h2>
+        <p class="section-desc">Discover how the four elements shape personality, compatibility, and daily energy.</p>
+      </div>
+      <div class="elements-grid">
+        <div class="element-card el-fire-bg">
+          <div class="element-icon">🔥</div>
+          <h3>Fire Signs</h3>
+          <p class="element-signs">Aries · Leo · Sagittarius</p>
+          <p class="element-desc">Passionate, energetic, and creative leaders. Fire signs are driven by enthusiasm, courage, and a bold approach to life.</p>
+          <a href="https://www.aifate.net/en/zodiac" target="_blank" rel="noopener" class="read-more">Explore Fire Signs →</a>
+        </div>
+        <div class="element-card el-earth-bg">
+          <div class="element-icon">🌿</div>
+          <h3>Earth Signs</h3>
+          <p class="element-signs">Taurus · Virgo · Capricorn</p>
+          <p class="element-desc">Practical, reliable, and grounded builders. Earth signs value stability, hard work, and tangible results in everything they do.</p>
+          <a href="https://www.aifate.net/en/zodiac" target="_blank" rel="noopener" class="read-more">Explore Earth Signs →</a>
+        </div>
+        <div class="element-card el-air-bg">
+          <div class="element-icon">💨</div>
+          <h3>Air Signs</h3>
+          <p class="element-signs">Gemini · Libra · Aquarius</p>
+          <p class="element-desc">Intellectual, communicative, and social connectors. Air signs thrive on ideas, conversation, and building meaningful relationships.</p>
+          <a href="https://www.aifate.net/en/zodiac" target="_blank" rel="noopener" class="read-more">Explore Air Signs →</a>
+        </div>
+        <div class="element-card el-water-bg">
+          <div class="element-icon">💧</div>
+          <h3>Water Signs</h3>
+          <p class="element-signs">Cancer · Scorpio · Pisces</p>
+          <p class="element-desc">Intuitive, emotional, and deeply empathetic. Water signs are highly sensitive and often possess strong psychic or empathic abilities.</p>
+          <a href="https://www.aifate.net/en/zodiac" target="_blank" rel="noopener" class="read-more">Explore Water Signs →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="section" id="faq" aria-labelledby="faq-heading">
+    <div class="container container--narrow">
+      <div class="section-header">
+        <span class="section-label">Common Questions</span>
+        <h2 id="faq-heading" class="section-title">Horoscope FAQ</h2>
+        <p class="section-desc">Answers to frequently asked questions about daily horoscopes and zodiac signs.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What is today's horoscope?</summary>
+          <p>Today's horoscope is a daily astrological forecast based on the current planetary positions and their influence on each zodiac sign. It covers themes like love, career, energy, and personal growth. Read your free daily horoscope above for all 12 signs.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What are the 12 zodiac signs?</summary>
+          <p>The 12 zodiac signs are: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, and Pisces. Each sign belongs to one of four elements: Fire (Aries, Leo, Sagittarius), Earth (Taurus, Virgo, Capricorn), Air (Gemini, Libra, Aquarius), or Water (Cancer, Scorpio, Pisces).</p>
+        </details>
+        <details class="faq-item">
+          <summary>What are the fire signs of the zodiac?</summary>
+          <p>The fire signs are Aries, Leo, and Sagittarius. Fire signs are known for their passion, energy, creativity, and dynamic personalities. They are natural leaders who inspire others with their enthusiasm and courage.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What are the water signs of the zodiac?</summary>
+          <p>The water signs are Cancer, Scorpio, and Pisces. Water signs are known for their emotional depth, intuition, empathy, and strong connection to feelings. They are highly sensitive and often possess psychic or empathic abilities.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Should I read my Sun sign or Rising sign horoscope?</summary>
+          <p>For daily horoscopes, your Sun sign is the most common reference. However, your Rising sign (Ascendant) may feel more accurate for day-to-day events. For a complete picture, read both your Sun and Rising sign forecasts.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What is the most intelligent zodiac sign?</summary>
+          <p>Intelligence manifests differently across signs. Aquarius is often associated with innovative thinking and vision, Virgo with analytical and methodical abilities, and Gemini with quick wit and communication skills. Each sign has unique intellectual strengths.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- AIFATE FEATURE CTA -->
+  <section class="section" aria-labelledby="aifate-heading">
+    <div class="container">
+      <div class="aifate-banner">
+        <div class="aifate-logo-mark">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+            <circle cx="12" cy="12" r="5.5" stroke="currentColor" stroke-width="1.2"/>
+            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+          </svg>
+          AIFATE
+        </div>
+        <h2 id="aifate-heading">Free AI-Powered Astrology Tools</h2>
+        <p>AIFATE offers a full suite of free birth chart, synastry, transit, and numerology tools — designed to give you clear, personalized astrological insights rather than generic forecasts.</p>
+        <div class="aifate-tools" aria-label="Available tools">
+          <span class="tool-chip">🌐 Birth Chart Calculator</span>
+          <span class="tool-chip">💫 Synastry Chart</span>
+          <span class="tool-chip">🔄 Transit Forecast</span>
+          <span class="tool-chip">☀️ Solar Return Chart</span>
+          <span class="tool-chip">🗺️ Astrocartography Map</span>
+          <span class="tool-chip">🔢 Numerology Analysis</span>
+        </div>
+        <a href="https://www.aifate.net/en" target="_blank" rel="noopener" class="aifate-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          Explore Free Tools at AIFATE.net
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <p class="aifate-link-note">Free · No registration required · Instant results</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="site-logo" style="margin-bottom: var(--space-4); display: inline-flex;" aria-label="Horoscope for Today">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+            <circle cx="16" cy="16" r="9" stroke="#c4a8ff" stroke-width="1.2"/>
+            <circle cx="16" cy="16" r="4" fill="#c4a8ff" opacity="0.7"/>
+            <circle cx="16" cy="4" r="1.5" fill="#f0c96b"/>
+            <circle cx="16" cy="28" r="1.5" fill="#f0c96b"/>
+            <circle cx="4" cy="16" r="1.5" fill="#f0c96b"/>
+            <circle cx="28" cy="16" r="1.5" fill="#f0c96b"/>
+          </svg>
+          &nbsp;Horoscope For Today
+        </a>
+        <p>Free daily astrology readings for all 12 zodiac signs. Explore your horoscope for today and discover the planetary influences shaping your path.</p>
+      </div>
+      <nav class="footer-col" aria-label="Zodiac signs">
+        <h4>Zodiac Signs</h4>
+        <ul>
+          <li><a href="#daily-signs">Aries · Taurus · Gemini</a></li>
+          <li><a href="#daily-signs">Cancer · Leo · Virgo</a></li>
+          <li><a href="#daily-signs">Libra · Scorpio · Sagittarius</a></li>
+          <li><a href="#daily-signs">Capricorn · Aquarius · Pisces</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Astrology tools">
+        <h4>Astrology Tools</h4>
+        <ul>
+          <li><a href="https://www.aifate.net/en/birth-chart" target="_blank" rel="noopener">Birth Chart Calculator</a></li>
+          <li><a href="https://www.aifate.net/en/synastry-chart" target="_blank" rel="noopener">Synastry Chart</a></li>
+          <li><a href="https://www.aifate.net/en/transit-chart" target="_blank" rel="noopener">Transit Forecast</a></li>
+          <li><a href="https://www.aifate.net/en/numerology" target="_blank" rel="noopener">Numerology Analysis</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Learn more">
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Astrology" target="_blank" rel="noopener">Astrology (Wikipedia)</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Zodiac" target="_blank" rel="noopener">The Zodiac</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Natal_chart" target="_blank" rel="noopener">Natal Chart</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Horoscope For Today · horoscope-for-today.github.io · <a href="disclaimer.html">Disclaimer</a></p>
+      <p class="footer-aifate-credit">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        Powered by astrology tools from <a href="https://www.aifate.net/en" target="_blank" rel="noopener">AIFATE.net</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
